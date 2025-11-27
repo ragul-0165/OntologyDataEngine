@@ -35,7 +35,7 @@ export class RecommendationEngine {
           reasoning: suitability.additionalReasons,
         };
 
-        // Optionally augment reasoning with LLM explanation (non-blocking on failure)
+       
         if (weatherData) {
           const explanation = await generateExplanation({
             cropName: crop.name,

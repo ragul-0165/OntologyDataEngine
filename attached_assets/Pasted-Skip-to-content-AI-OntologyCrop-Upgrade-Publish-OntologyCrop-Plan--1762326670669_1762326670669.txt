@@ -1,0 +1,86 @@
+Skip to content
+
+
+AI
+
+
+
+
+OntologyCrop
+
+
+
+Upgrade
+
+
+
+Publish
+
+
+OntologyCrop
+Plan
+Build
+Files
+
+
+
+Commands
+Search
+Your app is not running
+
+Run
+to preview your app.
+keep it simple , and make work evrything working real with only these owx file, apis , csv
+
+3 minutes ago
+I'll help you build a simple, fully functional ontology-driven crop recommendation system using the provided OWX ontology file, CSV market data, and API integration for real-time weather data.
+
+Let me search for relevant integrations that might be useful for this project.
+
+
+Searched Replit's integrations for "weather API"
+
+Searched Replit's integrations for "OpenAI"
+Now I'll create a comprehensive plan for your ontology-driven crop recommendation system:
+
+App type
+Modern web app
+Integrations
+OpenAI
+An ontology-driven crop recommendation system that uses OWX reasoning, live weather API, and CSV market data to suggest sustainable crops with explainable AI
+I'll include the following features:
+
+Upload and parse OWX ontology file to extract crop-soil-climate relationships and rules
+Load and query CSV market data to display current crop prices by state/district
+Integrate live weather API (OpenWeatherMap) to fetch real-time temperature, humidity, and rainfall data based on user location
+Input form for farmers to enter: location (state/district), soil type, climate conditions, and farm size
+Reasoning engine that matches user inputs against ontology rules to recommend top 3-5 suitable crops
+Explainable AI explanations showing why each crop was recommended (soil match, climate suitability, water usage, carbon footprint)
+Display recommended crops with current market prices from CSV data and sustainability metrics
+Clean, farmer-friendly interface with visual indicators for crop suitability scores
+
+Change plan
+
+Get notified when your app is ready
+
+
+Scroll to latest
+Working..
+
+Stop
+I've created a feature list based on your request. If everything looks good, we can start creating.
+How do you want to continue?
+
+Start with a design
+5-10 mins
+Best if you want to see a design prototype first, then iterate on visuals or features
+
+Upgrade to build the entire app
+
+Edit plan
+
+Agent tools
+Loading... - Replit
+
+Pasted-Build-a-Fully-Functional-Ontology-Driven-Crop-Recommendation-System-Simple-Version-Goal-Build-a--1762326425914_1762326425915.txt
+Build a Fully Functional Ontology-Driven Crop Recommendation System (Simple Version)Goal:Build a simple, complete, and locally runnable web application titled“Ontology-Driven Crop Recommendation System for Sustainable Farming using Explainable AI.”The system must recommend suitable crops based on user input and reasoning from an ontology file, live API data, and Explainable AI (XAI) explanations.🌱 1. System DescriptionA farmer opens the web application and enters details such as soil type, climate, and budget.The system collects:Real-time weather data using the Weather API key: 962e60ba751a7d24503d23634b500cd2.Market price dataset (csv).It then combines these with agricultural knowledge stored in the ontology.owx file (uploaded in the project).Using ontology reasoning and predefined rules inside ontology.owx, the system analyzes how soil, climate, and budget align with various crops.Through an Explainable AI (XAI) layer, it generates a clear explanation of why a particular crop is suitable.Finally, it displays:Recommended cropReasoning explanation (XAI output)Sustainability or confidence scoreand allows the user to download a PDF report and submit feedback.⚙️ 2. Simple Tech StackComponent	TechnologyBackend	Flask (Python)Ontology Reasoning	Owlready2 (loads ontology.owx)Frontend	HTML + Bootstrap (served through Flask templates)Weather Data	OpenWeather API (key provided)Market Data	Local JSON dataset (uploaded)Explainability	Simple rule-based text generationPDF Report	ReportLabFeedback Storage	Local CSV fileRun Environment	Python 3.10+ (local machine)📁 3. Folder Structureontology_crop_system/├── app.py├── ontology.owx├── data/│   ├── market_data.csv│   ├── feedback.csv├── templates/│   ├── index.html│   ├── result.html├── static/│   ├── style.css├── requirements.txt└── README.md🔑 4. API KeysGrok API (for xai explanations): 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Weather API (for real-time weather data): 962e60ba751a7d24503d23634b500cd2🧩 5. Required FunctionalitiesInput Form (index.html)Soil Type (Clay, Sandy, Loam, Clay Loam)Climate (Humid, Dry, Tropical, Moderate)Budget (numeric input)“Get Recommendation” buttonBackend Process (app.py)Load ontology from ontology.owxFetch live weather data using the Weather APIRead market data from data/market_data.csvApply simple reasoning rules combining ontology facts + user + API dataGenerate a sustainability or confidence scoreProduce an Explainable AI message (example:“Paddy is recommended because Clay soil and Humid climate match ontology rules and market value is high.”)Return results to frontendResult Page (result.html)Display Recommended CropDisplay Reasoning Explanation (XAI)Show Sustainability/Confidence scoreButton to “Download Report as PDF”Feedback section (rating 1–5 + message)PDF GenerationInclude user inputs, recommended crop, reasoning, and score in a downloadable PDF.Feedback SystemStore user rating and feedback in data/feedback.csv.🧠 6. Explainable AI Logic (Simple)Use human-readable text combining matched ontology rules and API data.Example reasoning:“Paddy recommended because it grows in Clay soil and Humid climate, has favorable market value, and aligns with sustainable farming practices.”Show this reasoning clearly on the result page and in the PDF.📦 7. Python Dependencies (requirements.txt)FlaskOwlready2requestspandasreportlabjinja2🧰 8. Run Instructions (Local Setup)Download the ZIP, extract it to a folder (e.g., ontology_crop_system/).Place your ontology.owx file and market_data.json inside the data/ folder.Open a terminal in the project folder and install requirements:pip install -r requirements.txtRun the Flask app:python app.pyOpen your browser and go to:http://127.0.0.1:5000The application will open locally — enter inputs, get the recommendation, view explanation, download the report, and submit feedback.✅ After downloading and extracting, everything should work directly on your local system without additional setup.🌾 9. Expected Output ExampleInput:Soil → ClayClimate → HumidBudget → ₹20,000Output:Recommended Crop → PaddyReasoning → “Paddy grows best in Clay soil and Humid climate. Market value and sustainability scores indicate high profitability.”Sustainability Score → 0.87Confidence → High✅ PDF downloadable✅ Feedback saved locally🎯 10. GoalDeliver a simple but fully functional ontology-driven system that:Uses the ontology.owx file for reasoningIntegrates APIs for real-time updatesGenerates human-readable XAI explanationsWorks completely offline after initial setupLets users download reports and submit feedback easily
